@@ -1,0 +1,48 @@
+---
+title: "weheartdatascience"
+author: "Holly Probasco"
+format: html
+editor: visual
+---
+
+## Data Science Questions
+
+-   **What do you think being a data scientist is about?**
+
+    I think data science is about being able to do a little bit of everything. Though most people usually choose a specialty, understanding the whole Engineering to Analytics to Modeling pipeline is super beneficial, as many times companies have their team wearing multiple hats. However, being a Data Scientist is not only about the data itself, but also about understanding it in the context of the client or company you work at, and being able to communicate your understanding. Having results that can in return cause action in order to benefit the company is a large part of what being a data scientist is about, as the point of data is to answer questions, so if we are able to answer them in a meaningful way and make specific inferences using the data, that impact is able to show on a larger scale in potential changes that are able to be made.
+
+-   **What differences/similarities do you see between data scientists and statisticians?**
+
+    At specifically NC State, speaking from experience, statistics is *way* less applied than data science in their respective programs. However more generally, data scientists spend a lot more time on data cleaning and wrangling than statisticians. Statisticians typically work with smaller data sets, and these data sets are usually not as "in real time" like they are for data scientists. Statisticians have data that they bring to a model based on variables seen in the data to answer questions. Data scientists have a developed model that is applied to an unstructured data set and the production system.
+
+-   **How do you view yourself in relation to these two areas?**
+
+    I have a lot more experience as a statistician. I got my undergrad degree in statistics and am now here for the same field. I've a bit of consulting as well, so the statistician side is currently more in my wheelhouse. However, data science is very interesting to me, and recently I've been looking more and more into the field, and am trying to get a better understanding of it, especially the analytics side.
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+The following code chunk gives us the class of y. This gives "density" because we define it as such above.
+
+```{r}
+class(y) 
+```
+
+The following code chunk gives us the internal type or storage mode of y. It tells us y is a list.
+
+```{r}
+typeof(y)
+```
+
+The following code chunk gives us the internal structure of y. It shows, as we knew from the previous code, that y is a List, but now we see that it is a list of 8. It then gives us the breakdown of each of the list's elements.
+
+```{r}
+str(y)
+```
+
+The following plot of y shows density (y axis) plotted against petal length (x axis). This was done using the plot function, which shows in the source code but not in the final document due to setting echo = FALSE.
+
+```{r, echo=FALSE}
+plot(y)
+```
